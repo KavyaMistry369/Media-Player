@@ -6,7 +6,7 @@ class My_Audio_Controller extends ChangeNotifier{
 
 
  bool isGrid=true;
-  int index=0;
+
 
   List Songs=[
     "lib/views/assets/songs/1.mp3",
@@ -79,10 +79,11 @@ class My_Audio_Controller extends ChangeNotifier{
    init();
  }
 
- init(){
+ init({int index=0}){
     print("++++++Called++++++");
-    My_Audio_Player.open(Audio(Songs[index]),autoStart: true).then((value){
+    My_Audio_Player.open(Audio(Songs[index]),autoStart: false).then((value){
       totalDuration=My_Audio_Player.current.value!.audio.duration;
+      notifyListeners();
       print("$index===");
     });
   }
@@ -93,8 +94,8 @@ class My_Audio_Controller extends ChangeNotifier{
   }
 
   Get_My_Index({required int index}){
-    this.index=index;
-    init();
+   My_Audio_Player.pause();
+    init(index: index);
     notifyListeners();
   }
 

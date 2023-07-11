@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:glassmorphism/glassmorphism.dart';
 import 'package:media_player_app/views/controllers/audio_controllers.dart';
 import 'package:media_player_app/views/utils/route_utils.dart';
 import 'package:provider/provider.dart';
@@ -20,6 +19,7 @@ class _Songs_PageState extends State<Songs_Page> {
         return Scaffold(
           body:(provider.isGrid)? ListView.builder(itemCount:12,itemBuilder: (context, index) => GestureDetector(
             onTap: (){
+              Navigator.of(context).pushNamed(My_routes.detail,arguments: index);
             },
             child: Card(
               child: ListTile(

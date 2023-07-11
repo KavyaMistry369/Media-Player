@@ -38,6 +38,8 @@ dependencies:
   assets_audio_player:
   provider:
   glassmorphism:
+  chewie:
+  video_player:
 
 dev_dependencies:
   flutter_test:
@@ -67,7 +69,11 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
       - lib/views/assets/songs/
+      - lib/views/assets/bhajan/
+      - lib/views/assets/images/Bhajan_Images/
       - lib/views/assets/images/
+      - lib/views/assets/videos/
+      - lib/views/assets/videos/bhajan/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
