@@ -20,3 +20,5 @@ player page.
 - To implement a detail page of each audio and video file for playing it with playback controls.
 - To optimize the application for performance and user experience.
 - To enhance the knowledge and skills of IT students in mobile app development using Flutter.
+
+![]("https://drive.google.com/file/d/19i-9_6a-sPI-5jk52ta-v6bSx945OKr_/view')
