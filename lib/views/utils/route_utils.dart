@@ -6,7 +6,5 @@ class My_routes{
   static String video="video_Page";
   static String detail="Songs_Details";
   static String Detail="Bhajan_Details";
-  static String bhajan="Bhajan_Page";
-  static String bhajan_video="Bhajan_Video_Page";
 
 }

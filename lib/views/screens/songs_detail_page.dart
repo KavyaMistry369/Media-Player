@@ -1,3 +1,4 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:glassmorphism/glassmorphism.dart';
@@ -13,11 +14,11 @@ class Songs_Details extends StatefulWidget {
 
 class _Songs_DetailsState extends State<Songs_Details> {
   late AnimationController My_Animation_Controller;
-
   @override
   Widget build(BuildContext context) {
-    int index = ModalRoute.of(context)!.settings.arguments as int;
+    int index=ModalRoute.of(context)!.settings.arguments as int;
     return Scaffold(
+
       body:Center(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -29,14 +30,11 @@ class _Songs_DetailsState extends State<Songs_Details> {
                 if(snapshot.hasData)
                   {
                     double CurrentPosition=snapshot.data!.inSeconds.toDouble();
-                    return Container(
+                    return   Container(
                       child: Stack(
                         children:[
                           Container(
-                            height: double.infinity,
-                            width: double.infinity,
-                            alignment: Alignment.center,
-                            child: Image.asset("${provider.Photos[index]}",fit: BoxFit.fill,),
+                            child: Image.asset("${provider.Photos[index]}"),
                           ),
                           GlassmorphicContainer(
                             width: double.infinity,
@@ -68,14 +66,8 @@ class _Songs_DetailsState extends State<Songs_Details> {
                               child: SingleChildScrollView(
                                 scrollDirection: Axis.vertical,
                                 child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Container(
-                                      height: 300,
-                                      width: 300,
-                                      color: Colors.amber,
-                                      child: Image.asset("${provider.Photos[index]}",fit: BoxFit.cover,),
-                                    ),
+                                    Image.asset("${provider.Photos[index]}"),
                                     SizedBox(height: 30,),
                                     Text("${provider.Songs_Name[index]}",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
                                     Text("${provider.Artists[index]}",style: TextStyle(fontSize: 20,fontWeight: FontWeight.w200),),
@@ -123,7 +115,7 @@ class _Songs_DetailsState extends State<Songs_Details> {
                               ),
                             ),),
                           ),
-                      ],
+                        ],
                       ),
                     );
                   }

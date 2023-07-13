@@ -6,6 +6,7 @@ class My_Audio_Controller extends ChangeNotifier{
 
 
  bool isGrid=true;
+ int index=0;
 
 
   List Songs=[
@@ -112,6 +113,11 @@ class My_Audio_Controller extends ChangeNotifier{
  My_Grid(){
     isGrid=!isGrid;
     notifyListeners();
+  }
+
+  changePage({required int index}){
+   index=index;
+   notifyListeners();
   }
 
   get isPlaying{

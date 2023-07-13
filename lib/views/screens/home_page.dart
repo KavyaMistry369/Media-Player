@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:media_player_app/views/controllers/audio_controllers.dart';
-import 'package:media_player_app/views/controllers/video_controller.dart';
+import 'package:media_player_app/views/screens/songs_detail_page.dart';
 import 'package:media_player_app/views/screens/songs_page.dart';
 import 'package:media_player_app/views/screens/video_page.dart';
 import 'package:media_player_app/views/utils/route_utils.dart';
@@ -52,7 +52,7 @@ class _Home_pageState extends State<Home_page>  with SingleTickerProviderStateMi
       body: TabBarView(
         controller: My_Tab_Controller,
           children: [
-          Songs_Page(),
+         Songs_Page(),
           Video_Page(),
       ]),
       );
