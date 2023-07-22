@@ -21,4 +21,12 @@ player page.
 - To optimize the application for performance and user experience.
 - To enhance the knowledge and skills of IT students in mobile app development using Flutter.
 
-![](https://drive.google.com/file/d/19i-9_6a-sPI-5jk52ta-v6bSx945OKr_/view)
+https://github.com/KavyaMistry369/media_player_app_2/assets/130814792/14aee807-573d-4252-b14e-ff32edfe1561
+
+![Screenshot 2023-07-13 070847](https://github.com/KavyaMistry369/media_player_app_2/assets/130814792/06622de8-460b-46a9-822e-e757f5ca9398)
+![Screenshot 2023-07-13 071333](https://github.com/KavyaMistry369/media_player_app_2/assets/130814792/3ca41aa8-925f-4997-9ba9-914b1d3ad32d)
+![Screenshot 2023-07-13 071420](https://github.com/KavyaMistry369/media_player_app_2/assets/130814792/2feb705c-4714-4a7b-925a-086da4d08f81)
+![Screenshot 2023-07-13 071639](https://github.com/KavyaMistry369/media_player_app_2/assets/130814792/e1e4c6a3-0c5a-4743-8312-e35b2b7c88ac)
+![Screenshot 2023-07-13 071725](https://github.com/KavyaMistry369/media_player_app_2/assets/130814792/178aa52b-6018-4326-810d-baa8ba52b951)
+
+
